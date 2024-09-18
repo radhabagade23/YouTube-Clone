@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.Header {
+    display: flex;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 999; 
+    background-color: white; 
+}
+body {
+    padding-top: 140px; 
+}
+.left-content{
+    padding: 10px;
+    width: 380px;
+}
+.header-side-2, .header-side-1{
+    display: flex;
+}
+.logo{
+    margin-top: -26px;
+    margin-right: 150px;
+}
+.bar{
+    font-size: 30px;
+    margin: 15px 0px 10px 30px;
+    padding: 16px;
+    color: rgb(84, 83, 83);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.bar:hover{
+    background-color: #f1eeee;
+}
+#search-bar{
+    font-size: 23px;
+    margin: 13px 0px 10px;
+    padding: 16px;
+    width: 800px;
+    border: 1px solid #bbb;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+.search-btn{
+    height: 61px;
+    width: 100px;
+    margin: 13px -5px;
+    background-color: #f8f3f3;
+    border: 1px solid #bbb;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.mic{
+    margin: 13px 170px 10px 30px;
+    width: 57px;
+    height: 57px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #f0eeee;
+    border: none;
+}
+.header-side-3{
+    display: flex;
+    margin-top: 30px;
+}
+
+.create, .bell{
+    cursor: pointer;
+}
+.create{
+    margin: 12px;
+}
+.video{
+    height: 60px;
+    width: 60px;
+    margin-top: -16px;
+    border-radius: 50%;
+}
+.video:hover{
+    background-color: #f1eeee;
+}
+.bell{
+    font-size: 33px;
+    margin: -15px 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 16px;
+}
+.bell:hover{
+    background-color: #f1eeee;
+}
+.header-side-3 .span img{
+    height: 57px;
+    width: 57px;
+    border-radius: 50%;
+    margin: -10px 20px 0px 10px;
+    cursor: pointer;
+}
+.home{
+    margin: -15px 20px;
+    padding: 10px 15px;
+    display: flex;
+    border-radius: 15px;
+}
+.home p{
+    margin-top: 13px;
+    margin-left: 42px;
+    font-size: 22px;
+}
+.left-para{
+    margin-top: 13px;
+    margin-left: 35px;
+    font-size: 22px;
+}
+.home i{
+    font-size: 35px;
+}
+.home:hover{
+    width: 230px;
+    background-color: #f1eeee;
+}
+.shorts{
+    margin: 10px 20px;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+.shorts:hover{
+    width: 230px;
+    background-color: #f1eeee;
+}
+.subscription{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.subscription img{
+    margin: -20px 25px 0px
+}
+.subscription p{
+    margin-top: -5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.subscription:hover{
+    width: 230px;
+    background-color: #f1eeee;
+}
+.YOU{
+    display: flex;
+}
+.you i{
+    font-size: 35px;
+    margin: 27px -10px;
+}
+.head{
+    margin: 30px 30px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.history, .watch-later, .liked-videos{
+    display: flex;
+    margin-top: -30px;
+    margin-left: 5px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+.history{
+    border-radius: 15px;
+    width: 230px;
+}
+.history:hover{
+    background-color: #f1eeee;
+}
+.history i{
+    font-size: 35px;
+}
+.history p{
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+.playlist{
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 80px;
+}
+.playlist i{
+    font-size: 35px;
+    margin: 15px 0px 10px 20px;
+    padding: 16px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+.playlist:hover{
+    width: 230px;
+    background-color: #f1eeee;
+}
+.playlist p{
+    margin-left:28px;
+    margin-top: 37px;
+    font-size: 22px;
+}
+.watch-later{
+    display: flex;
+    border-radius: 15px;
+}
+.watch-later i{
+    font-size: 30px;
+}
+.watch-later p{
+    margin-left:54px;
+    margin-top: 32px;
+    font-size: 22px;
+}
+.watch-later:hover{
+    width: 230px;
+    background-color: #f1eeee;
+}
+.liked-videos{
+    display: flex;
+    margin-top: -30px;
+    border-radius: 15px;
+}
+.liked-videos p{
+    margin-top: 35px;
+    margin-left:50px;
+    font-size: 22px;
+}
+.liked-videos i{
+    font-size: 35px;
+}
+.liked-videos:hover{
+    width: 230px;
+    background-color: #f1eeee;
+}
+.hr1{
+    width: 325px;
+}
+.hr2{
+    margin-left: -8px;
+    width: 340px;
+}
+.subscriptions{
+    padding: 35px;
+}
+b{
+    font-size: 25px;
+}
+.subscriptions img{
+    height: 35px;
+    border-radius: 50%;
+}
+.coding, .apna, .akshay, .harry, .devtown, .KK,.all, .trending, .shopping, .movies, .music, .live, .gaming, .news, .sports, .course, .fashion, .podcasts, .premium, .Music, .kids, .setting, .report, .help, .feedback{
+    display: flex;
+    margin-top: 20px;
+}
+.subscriptions p{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.all p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 39px;
+}
+.all i{
+    font-size: 25px;
+}
+.explore, .More, .local{
+    padding: 35px;
+}
+.explore i{
+    font-size: 35px;
+    color: #323030;
+}
+.explore img{
+    height: 30px;
+}
+.explore p{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.fashion p{
+    margin-left: 35px;
+}
+.premium, .kids i{
+    font-size: 30px;
+    color: red;
+}
+.play{
+    font-size: 25px;
+    margin-left: 3px;
+    color: red;
+}
+.More p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 34px;
+    color: black;
+}
+.local i{
+    font-size: 35px;
+    color: #323030;
+}
+.local p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 34px;
+}
+.text{
+    padding: 35px 20px;
+}
+.text a{
+    font-size: 22px;
+    font-weight: 600;
+    color: #595858;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.para{
+    font-size: 17px;
+    margin: 30px 15px -15px;
+    color: #9a9797;
+}
