@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Header {
     display: flex;
@@ -17,7 +18,8 @@ body {
 }
 .left-content{
     padding: 10px;
-    width: 380px;
+    width: 370px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .header-side-2, .header-side-1{
     display: flex;
@@ -56,7 +58,9 @@ body {
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
 }
-
+.search-btn i{
+    font-size: 30px;
+}
 .mic{
     margin: 13px 170px 10px 30px;
     width: 57px;
@@ -103,6 +107,9 @@ body {
     border-radius: 50%;
     margin: -10px 20px 0px 10px;
     cursor: pointer;
+}
+.left-right-nav{
+    display: flex;
 }
 .home{
     margin: -15px 20px;
@@ -271,6 +278,9 @@ b{
     display: flex;
     margin-top: 20px;
 }
+.live img{
+    margin-top: 9px;
+}
 .subscriptions p{
     font-size: 22px;
     margin-top: 10px;
@@ -338,6 +348,151 @@ b{
 }
 .para{
     font-size: 17px;
-    margin: 30px 15px -15px;
+    margin: 30px 0px -15px;
     color: #9a9797;
+}
+.right-side button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #e3e2e2;
+    border: none;
+    margin-left: 13px;
+}
+.right-side .al{
+    text-decoration: none;
+    background-color: #080808;
+    color: white;
+}
+
+.main-container{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
+}
+iframe{
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+.icon img{
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 35px;
+}
+.icon{
+    display: flex;
+}
+.icon b{
+    font-size: 22px;
+}
+.icon p{
+    color: #606060;
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+.icon i{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 640px) {
+    .left-side{
+        overflow: hidden;
+    }
+    .row {
+        grid-template-columns: 1fr;
+    }
+    iframe{
+        height: 350px;
+        width: 100%;
+    }
+    .line i{
+        margin-left: 0;
+        margin-top: 5px;
+        margin-right: -28px;
+        font-size: 20px;
+    }
+    .logo{
+        margin-top: -20px;
+        margin-right: 20px;
+        height: 100px;
+    }
+    #search-bar{
+        font-size: 15px;
+        margin: 10px 0px 10px;
+        padding: 8px;
+        width: 200px;
+    }
+    .search-btn{
+        height: 35px;
+        width: 50px;
+        margin: 10px -2px;
+    }
+    .search-btn i{
+        font-size: 20px;
+        color: #878585;
+    }
+    .mic{
+        margin: 10px 25px 10px 10px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .video{
+        height: 30px;
+        width: 30px;
+        margin-top: -27px;
+        border-radius: 50%;
+    }
+    .video img{
+        height: 25px;
+    }
+    .bell{
+        font-size: 20px;
+        margin: -27px 5px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 16px;
+    }
+    .header-side-3 .span img{
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin: -15px 30px 15px 15px;
+        cursor: pointer;
+    }
+    .right-side button{
+        font-size: 12px;
+        padding: 7px 12px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    .a{
+        margin-top: -55px;
+    }
+    .main-container{
+        margin-top: 40px;
+        margin-left: 30px;
+        width: 1000px;
+        max-width:55%;
+    }
+    .icon b{
+        font-size: 25px;
+    }
+    .icon p{
+        font-size: 15px;
+    }
+    .icon img{
+        height: 60px;
+    }
+    
 }
